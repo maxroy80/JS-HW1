@@ -1,0 +1,12 @@
+form input, button {
+    display: block;
+    margin: 10px;
+}
+
+#BGwhite {
+    background: #fff;
+}
+
+#BGred {
+    background-color: red;
+}
