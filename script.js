@@ -3,24 +3,18 @@ let credentials = {
     password: "qwerty"
 };
 
-let login;
-let pass;
-
-function letLog(l) {
-    login = (l.value);
-}
-function letPass(p) {
-    pass = (p.value);
-}
-
+// let login = document.getElementById('login');
+// let pass = document.getElementById('pass');
 // console.log("Login - " + credentials.login + " Password - " + credentials.password);
 
 function check() {
-    console.log(login);
-    console.log(pass);
-    
-    if (credentials.login == login && credentials.password == pass) {
-        alert("All correct")
+
+    // console.log(login.value);
+    // console.log(pass.value);
+
+    // if (credentials.login == login.value && credentials.password == pass.value) {
+    if (credentials.login == document.getElementById('login').value && credentials.password == document.getElementById('pass').value) {
+            alert("All correct")
     }
     else {
         alert("Wrong login or password")
