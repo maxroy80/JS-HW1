@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <title>HW-JS1</title>
 </head>
-<body>
-    <form id="BGColor">
-        <input type="text" id="login">
-        <input type="password" id="pass">
-        <button type="submit" onclick="check()">Login</button>
-    </form>
 
+<body>
+    <div class="wrapper">
+        <form>
+            <input type="text" id="login">
+            <input type="password" id="pass">
+            <button type="submit" onclick="return check()">Login</button>
+        </form>
+        <div id="check_res">
+            <h1 id="check_massage"></h1>
+            <button type="submit" onclick="checkDone()">OK</button>
+        </div>
+
+    </div>
 
     <script src="script.js"></script>
 </body>
